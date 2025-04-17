@@ -18,5 +18,9 @@
       <button type="submit">Join the Tini Fam ✨</button>
     </form>
   </div>
+  <!-- Netlify hidden form for build-time detection -->
+  <form name="tini-signup" netlify netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+  </form>
 </body>
 </html>
