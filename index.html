@@ -5,14 +5,21 @@
   <title>Tini – Coming Soon</title>
   <link rel="icon" href="tini_clink_icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>tini</h1>
     <p class="tagline">Tiny hands. Big style.</p>
     <p>Beautiful, child-size tableware — made to feel like grown-up things.</p>
-    <form action="mailto:hello@tiniware.com" method="post" enctype="text/plain">
-      <input type="email" placeholder="Enter your email" required>
+    <form name="tini-signup" method="POST" data-netlify="true" action="/thank-you">
+      <input type="hidden" name="form-name" value="tini-signup">
+      <input type="email" name="email" placeholder="Enter your email" required>
       <button type="submit">Join the Tini Fam ✨</button>
     </form>
   </div>
